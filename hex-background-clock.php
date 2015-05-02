@@ -4,7 +4,7 @@ Plugin Name: The Colour Clock
 Plugin URI: http://smartfan.pl/
 Description: What colour is it when you browse your website? Bring more colour into your website with this ever-changing background. It changes background color of your website with the passage of time (time as a hexadecimal value).
 Author: Piotr Pesta
-Version: 1.0.0
+Version: 1.0.1
 Author URI: http://smartfan.pl/
 License: GPL12
 */
@@ -96,9 +96,17 @@ function display_ct() {
 	greenhex = hexifyWithZeroLead(green);
 	bluehex = hexifyWithZeroLead(blue);
 	
+	timeh = zeroFill(h);
+	timem = zeroFill(m);
+	times = zeroFill(s);
+	
 	function hexifyWithZeroLead(hexval){
 		var rtn = hexval.toString(16);
 		return (rtn.length == 1 ? "0" : "") + rtn;
+	}
+	
+	function zeroFill(i) {
+    	return (i < 10 ? '0' : '') + i
 	}
 	
 	var hex = "#" + redhex + greenhex + bluehex;
@@ -108,7 +116,7 @@ function display_ct() {
 <?php
 
 	if ($hidewidget == ''){
-		echo "document.getElementById('pp-colour-clock').innerHTML = h+' : '+m+' : '+s+'<br>'+hex;";
+		echo "document.getElementById('pp-colour-clock').innerHTML = timeh+' : '+timem+' : '+times+'<br>'+hex;";
 	}else {
 		echo "document.getElementById('pp-colour-clock');";
 }
