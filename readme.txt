@@ -16,6 +16,8 @@ What colour is it when you browse your website? Bring more colour into your webs
 
 What colour is it when you browse your website? Bring more colour into your website with this ever-changing background. It changes background color of your website with the passage of time (time as a hexadecimal value). Remember that it doesn't always look good with every theme, so test it with your theme first! To change clock syle, just edit style-hex-background-clock.css file.
 
+If you would like to show your support for this software, please consider donating: [Donate via PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EEDF5TV3M2WVG).
+
 == Installation ==
 
 1. Upload the zip to 'plugins' directory
