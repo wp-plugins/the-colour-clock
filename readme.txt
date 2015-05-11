@@ -1,5 +1,6 @@
 === The Colour Clock ===
 Contributors: Piotr Pesta
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EEDF5TV3M2WVG
 Plugin Name: The Colour Clock
 Plugin URI: http://smartfan.pl/
 Tags: colour, clock, background, wallpaper, hex, hexadecimal, background changer
