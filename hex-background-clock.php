@@ -4,7 +4,7 @@ Plugin Name: The Colour Clock
 Plugin URI: http://smartfan.pl/
 Description: What colour is it when you browse your website? Bring more colour into your website with this ever-changing background. It changes background color of your website with the passage of time (time as a hexadecimal value).
 Author: Piotr Pesta
-Version: 1.0.1
+Version: 1.0.2
 Author URI: http://smartfan.pl/
 License: GPL12
 */
@@ -21,7 +21,7 @@ class hex_background_clock extends WP_Widget {
 // konstruktor widgetu
 function hex_background_clock() {
 
-	$this->WP_Widget(false, $name = __('The Colour Clock', 'wp_widget_plugin') );
+	parent::__construct(false, $name = __('The Colour Clock', 'wp_widget_plugin') );
 
 }
 
